@@ -1,0 +1,22 @@
+.container {
+    background-color: darkgrey;
+    display: flex;
+}
+.sidebar {
+    background-color: grey;
+    width: 200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    background-color: whitesmoke;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 640px) {
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+    }
+}
